@@ -7,4 +7,17 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  background-color: var(--secondary);
+}
+
+:root {
+  --primary: #ffffff;
+  --secondary: #fafafa;
+  --border: #dbdbdb;
+
+  --story-border: #262626;
+
+  --text-dark: #262626;
+  --text-light: #999999;
 }
