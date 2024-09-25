@@ -1,5 +1,5 @@
 .aside {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: 0 2.5%;
   padding: 0 2.5%;
@@ -51,12 +51,14 @@
 .other-users {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   width: 100%;
   padding: 20px 0 20px 10px;
 }
 
 .other-user {
   display: flex;
+  align-items: center;
   gap: 10px;
   width: 100%;
 }
@@ -66,18 +68,49 @@
   height: 2rem;
 }
 
+.other-user a {
+  font-size: 0.85rem;
+  text-decoration-line: none;
+  color: rgb(0, 170, 255);
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .other-profil-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   flex: 1;
   font-size: 0.85rem;
   color: var(--text-dark);
   font-weight: 600;
+  overflow: hidden;
 }
 
-.other-profil-name div:nth-child(2) {
+.long-name {
   font-size: 0.7rem;
   font-weight: 500;
   color: var(--text-light);
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.side-footer {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+@media (min-width: 999px) {
+  .aside {
+    display: flex;
+  }
 }
